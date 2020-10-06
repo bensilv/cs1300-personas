@@ -3,17 +3,30 @@
 #title {
     text-align: center;
     color: cornflowerblue;
-    text-shadow: 0px 0px 8px white;
-    /*background-color: white;*/
 }
 
 #title span {
     background-color: white;
     padding: .2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-weight: bolder !important;
+}
+
+h3 {
+    font-weight: bold !important
+}
+
+
+#main-navbar a.nav-link.active {
+    background-color: lightsalmon;
 }
 
 #header {
-    height: 20vh;
+    height: 30vh;
     background-color: lightsalmon;
     background-image: url("images/pattern.png");
     background-size: 10em;
@@ -23,12 +36,14 @@
 
 .section-card {
     margin-bottom: 2em;
+    border-radius: .5em;
 }
 
 #main-navbar {
     top: 10em;
     margin-left: 1em;
     margin-right: 1em;
+    border-radius: .5em;
 }
 
 #main-content {
@@ -37,6 +52,15 @@
 
 .story-card {
     margin-bottom: 1em;
+}
+
+.subject-card {
+    margin-bottom: 1em;
+}
+
+.badge-salm {
+    color: white;
+    background-color: lightsalmon;
 }
 
 body {
