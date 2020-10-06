@@ -2,13 +2,321 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Personas</title>
+    <script src="support/jquery-3.5.1.min.js"></script>
+    <script src="support/bootstrap.bundle.min.js"></script>
+    <script src="support/mdb.min.js"></script>
+    <link rel="stylesheet" href="support/bootstrap.min.css">
+    <link rel="stylesheet" href="support/mdb.min.css">
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
+  <body data-spy="scroll" data-target="#main-navbar">
+    <div id="header" class="row align-items-center">
+      <div class="col  text-center">
+        <h1 id="title"><span>Personas & Storyboarding: Microwaves</span></h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-2">
+        <nav id="main-navbar" class="navbar navbar-light bg-light flex-column mt-4 sticky-top">
+<!--          <a class="navbar-brand" href="#">Navbar</a>-->
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link active" href="#introduction">Introduction</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#interface">The Interface</a>
+            </nav>
+            <a class="nav-link active" href="#questions">Questions</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#subject-interviews">Subject Interviews</a>
+            </nav>
+            <a class="nav-link" href="#personas">Personas</a>
+            <a class="nav-link" href="#storyboard">Storyboard</a>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-lg-9" id="main-content">
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="introduction">Introduction</h2>
+            <p>In this project I've set out to learn how different people use microwaves to better understand the interface
+            and how it could possibly be improved! </p>
+            <h3 id="interface">The Interface: Microwave</h3>
+            <img class="img-fluid" src="images/microwave-labelled.png" alt="Microwave">
+            <p>Microwaves allow people to quickly heat up or reheat food. They also offer many presets and other functions
+             such as defrosting and a timer. Users can open the door and place their food inside. Next they either
+              type in a time or select a preset or the 30 second button, and
+            then click the start button to cook their food. The screen counts down the time left.</p>
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="questions">Questions</h2>
+            <p>After users used the microwave, they were asked the following questions so I could better understand
+            their experience:</p>
+            <ol>
+              <li>On a scale of 1-5 (new user to expert), how experienced are you with microwaves?</li>
+              <li>On a scale of 1-5 rate your confidence cooking food in a microwave.</li>
+              <li>What do you use the microwave for?</li>
+              <ol>
+                <li>If you use the microwave with food, what food?</li>
+              </ol>
+              <li>What can you use the microwave for?</li>
+              <ol>
+                <li>If there are features you know about but don't use: why do you not use these other capabilities of the microwave?</li>
+              </ol>
+              <li>On a scale of 1-5 how easy was using this microwave? (Super Hard -> Super Easy)</li>
+              <ol>
+                <li>Why did you make the selection you did?</li>
+              </ol>
+              <li>How did you use the microwave from start to finish?</li>
+              <ol>
+                <li>How did you decide on these actions?</li>
+                <li>If you were to use the microwave again for this task, would you perform these same actions or do them differently?</li>
+              </ol>
+              <li>How did you know when you could retrieve your food?</li>
+              <li>How effective was the handle?</li>
+              <li>What does each button on the microwave do?</li>
+              <ol>
+                <li>What buttons on the microwave do you use the most?</li>
+                <ol><li>Why do you use these buttons the most?</li></ol>
+              </ol>
+              <ol>
+                <li>What buttons on the microwave do you use the least?</li>
+                <ol><li>Why do you use these buttons the least?</li></ol>
+              </ol>
+              <li>What can or did you do to turn off the microwave?</li>
+              <li>How did you decide how long to microwave this item?</li>
+              <ol><li>On a scale of 1-5 how confident were you in this choice?</li></ol>
+              <li>Did the food come out as expected?</li>
+              <li>On a scale of 1-5, (never to every time) how often do items come out of the microwave as expected?</li>
+              <ol><li>If not 5: How do you handle when items come out in some unexpected way?</li></ol>
+            </ol>
+            <h3 id="subject-interviews">Subject Interviews</h3>
+            <p>I chose 3 people to observe using the microwave, after which I asked them the above questions and recorded my observations.</p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-header text-center">
+                    <h3>Subject 1</h3>
+                  </div>
+                  <div class="card-body">
+                    <h4>Observations</h4>
+                    <ul>
+                      <li>Used the microwave to warm a cookie</li>
+                      <li>Used only 30 second button to run microwave</li>
+                      <li>Was very observant and checked on cookie after 15 seconds, put cookie back and ran for full 30 seconds</li>
+                    </ul>
+                    <h4>Question Responses</h4>
+                    <ul>
+                      <li>Responded that he is both experience and confident in using the microwave</li>
+                      <li>Expressed that they do not know a ton about microwave safety & best practices</li>
+                      <li>Did not show knowledge of microwave functions such as defrost and timer</li>
+                      <li>Said that he prefers to use the 30 second button and never uses the presets</li>
+                      <li>Responded that he used intuition to decide how long to microwave the cookie</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-header text-center">
+                    <h3>Subject 2</h3>
+                  </div>
+                  <div class="card-body">
+                    <h4>Observations</h4>
+                    <ul>
+                      <li>Heated up leftover pasta in microwave</li>
+                      <li>Didn't cover plate with pasta, later said, "I guess I should've covered it"</li>
+                      <li>Touched the food with his tongue to test its temperature</li>
+                      <li>Stopped microwave by opening the door</li>
+                    </ul>
+                    <h4>Question Responses</h4>
+                    <ul>
+                      <li>Mentioned that the microwave was easy to use but the cancel button was hard to find</li>
+                      <li>Expressed he doesn't use the presets because he would rather rely on directions that come with food</li>
+                      <li>Mentioned that he knows to stop the microwave if he hears popping noises</li>
+                      <li>Mentioned that he does not know how the timer button works</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-header text-center">
+                    <h3>Subject 3</h3>
+                  </div>
+                  <div class="card-body">
+                    <h4>Observations</h4>
+                    <ul>
+                      <li>Used the microwave to make popcorn</li>
+                      <li>Referred to the popcorn packaging for "this side up" instructions</li>
+                      <li>Initially pressed the popcorn button but then stopped the microwave and typed in 3 minutes based on the popcorn package instructions</li>
+                      <li>Did not observe microwave while popcorn cooked</li>
+                      <li>Opened microwave early when popcorn stopped popping</li>
+                    </ul>
+                    <h4>Question Responses</h4>
+                    <ul>
+                      <li>Explained that he likes to rely on a food's instructions over his own intuition or microwave presets</li>
+                      <li>Said he listened to the popping and opened stopped the microwave when the popping stopped</li>
+                      <li>Expressed that he normally types in the time and does not frequently use the 30 second button</li>
+                      <li>He says half the time he uses microwaves the food comes out to cold, he then puts it back in</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="personas">Personas</h2>
+            <p>Using the observations I constructed the following two empathy maps to represent two likely users of a microwave. </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="images/persona1.jpg" alt="Stressed Sven Empathy Map">
+              </div>
+              <div class="col-lg-6">
+                <img class="img-fluid" src="images/persona2.jpg" alt="Chillin' Charlie Empathy Map">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="storyboard">Storyboard</h2>
+            <p>Using the empathy map of Stressed Sven I crafted a storyboard illustrating his experience with the microwave. </p>
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/1)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">1</span> It's 9pm and Stressed Sven is struggling through his homework and has no time to stop and eat dinner, the hunger is getting to him.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/2)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">2</span> Stressed Sven looks for food in his fridge and decides to heat up leftover pasta as a quick meal.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/3)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">3</span> He quickly puts the food on a plate and shoves it in the microwave.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/4)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">4</span> Stressed Sven simply hits the microwaves 30 second button to instantly heat the food with one press.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/5)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">5</span> Stressed Sven brought his laptop and is working on his homework as the food cooks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/6)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">6</span> After only 15 seconds, Stressed Sven gets nervous that the food will burn and stops the microwave to check the food.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/7)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">7</span> The food wasn't warm enough so Stressed Sven puts it back and hits the start button to continue cooking.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/8)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">8</span> The microwave beeps to signify it has finished and Stressed Sven takes out his food and touches it to check that it is done.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4">
+                <div class="card story-card">
+                  <div class="card-body">
+                    <img class="img-fluid" src="images/9)_Storyboard.jpg" alt="Storyboard 1">
+                  </div>
+                  <div class="card-footer">
+                    <p><span class="badge badge-pill badge-warning">9</span> Stressed Sven successfully put together a quick dinner, he's eating it as he does his homework.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+    </div>
   </body>
 </html>

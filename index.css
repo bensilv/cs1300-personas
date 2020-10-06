@@ -1,1 +1,44 @@
 /* Put your style information here! */
+
+#title {
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 0px 0px 8px white;
+    /*background-color: white;*/
+}
+
+#title span {
+    background-color: white;
+    padding: .2em;
+}
+
+#header {
+    height: 20vh;
+    background-color: lightsalmon;
+    background-image: url("images/pattern.png");
+    background-size: 10em;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+.section-card {
+    margin-bottom: 2em;
+}
+
+#main-navbar {
+    top: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#main-content {
+    margin-top: 2em;
+}
+
+.story-card {
+    margin-bottom: 1em;
+}
+
+body {
+    position: relative
+}
